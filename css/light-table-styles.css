@@ -38,7 +38,6 @@ ul {
     z-index: 10;
 
 }
-
 #lt-container-inside {
     position:absolute;
     left: 40px;
@@ -218,7 +217,7 @@ ul {
 }
 
 #lt-readme .content {
-    height: 300px;
+    height: 700px;
     overflow: hidden;
 }
 #lt-mobile-readme {
@@ -235,8 +234,7 @@ ul {
 }
 
 #lt-bandwidth {
-    position: absolute;
-    top: 390px;
+    display: none;
 }
 
 #lt-globalization {
@@ -326,108 +324,6 @@ ul {
     color: #000;
 }
 
-.folder-container {
-    margin: 8px 18px 0;
-    float: left;
-    cursor: pointer;
-}
-
-
-.folder-label{
-    background-color: #000;
-    color: #fff;
-    font-size: 10px;
-    margin-bottom: 5px;
-    padding: 1px;
-    width: 70px;
-    text-transform: uppercase;
-    border-radius: 2px;
-}
-
-.folder-container:hover .folder-label{
-    background-color: #feb400;
-    color: #000;
-}
-
-.folder-label.selected{
-    background-color: #feb400;
-    color: #000;
-}
-
-#lt-launch-github {
-    margin-top: 20px;
-}
-
-.selected-folder {
-    background-color: #feb400;
-    color: #000;
-}
-
-.folder-big {
-    background-image: url(../images/encom_folder_big.png);
-    padding: 0px;
-    margin: 0px;
-    width:95px;
-    height: 63px;
-}
-
-.folder-small {
-    background-image: url(../images/encom_folder_small.png);
-    padding: 0px;
-    margin: 0px;
-    width:80px;
-    height: 49px;
-}
-
-#lt-keyboard {
-    margin-left: 8px;
-    position: absolute;
-    top: 355px;
-    width: 470px;
-}
-
-#lt-keyboard div{
-    background-color: rgba(255,255,255,0);
-    border-radius: 5px;
-    float: left;
-    width: 35px;
-    text-align:center;
-    padding-top: 10px;
-    margin-top: 5px;
-    height: 20px;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #00eeee;
-    cursor: pointer;
-}
-
-#lt-keyboard #k-9{
-    clear: both;
-    margin-left:10px;
-}
-
-#lt-keyboard #k-500{
-    clear: both;
-    margin-left:20px;
-}
-
-#lt-keyboard #k-16{
-    clear: both;
-    margin-left:5px;
-}
-
-#lt-keyboard #k-32 {
-    clear: both;
-    width: 300px;
-    height: 5px;
-    border: 1px solid #00eeee;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-left: 80px;
-
-
-}
-
 #lt-far-right-column {
     position: absolute;
     left: 1000px;
@@ -472,118 +368,10 @@ ul {
     50% {opacity: 1.0;}
     100% {opacity: 0.3;}
 }
-}
 
 
-@media (max-width: 1100px) { 
 
-    #lt-far-right-column {
-        display: none;
-    }
-
-    #lt-left-column {
-        display: none;
-    }
-    #lt-right-column {
-        left: 0;
-        top: 0;
-        width: 330px;
-    }
-
-    .content-container {
-        width: 330px;
-    }
-    #lt-globalization {
-        top: 30px;
-        width: 320px;
-        height: 200px;
-    }
-
-    #lt-globalization .content{
-        height: 200px;
-    }
-    #lt-container-outside{
-        top: 0;
-        width: 350px;
-        height: 610px;
-        z-index: 10;
-        box-shadow: none;
-        border: none;
-    }
-
-    #lt-keyboard {
-        display: none;
-    }
-
-    #lt-container-inside {
-        position:absolute;
-        left: 0;
-        top:0;
-        width: 330px;
-        height: 600px;
-        z-index: 20;
-        box-shadow: none;
-        border: none;
-    }
-    #lt-header-top-right {
-        position: absolute;
-        top: 0;
-    }
-
-    #lt-header-bottom-right {
-        position: absolute;
-        top: 580px;
-    }
-
-    .lt-header-left-section {
-        width:65%;
-
-    }
-    .lt-header-right-section {
-        width:25%;
-
-    }
-
-    h2 em, h2 .alt-1 {
-        display:none;
-
-    }
-
-    #lt-command-line {
-        display:none;
-    }
-
-    #lt-mobile-readme {
-        width: 320px;
-    }
-
-    .folder-big {
-        background-image: url(../images/encom_folder_small.png);
-        width:80px;
-        height: 49px;
-        margin: 0;
-    }
-
-    #lt-launch-github {
-        margin-top: 8px;
-    }
-
-    .folder-small {
-        background-image: url(../images/encom_folder_small.png);
-        width:80px;
-        height: 49px;
-        margin: 0;
-    }
-
-    .folder-container {
-        margin: 8px 12px;
-
-
-    }
-
-}
-
-@media (min-width: 1600px) { 
+@media (min-width: 1600px) {
 
     body {
         font-size:8pt;
@@ -597,16 +385,12 @@ ul {
 
     #lt-container-outside{
         position:absolute;
-        /* width: 1140px; */
-        /* height: 610px; */
         width: 1540px;
         height: 760px;
 
     }
 
     #lt-container-inside {
-        /* width: 1100px; */
-        /* height: 600px; */
         width: 1500px;
         height: 750px;
     }
@@ -670,7 +454,7 @@ ul {
     }
 
     #lt-readme .content {
-        height: 380px;
+        height: 600px;
     }
     #lt-readme .content p{
         padding-left: 15px;
@@ -688,7 +472,7 @@ ul {
     }
 
     #lt-globalization .content {
-        height: 360px;
+        height: 615px;
     }
 
     #lt-command-line {
@@ -725,47 +509,6 @@ ul {
         color: #000;
     }
 
-    .folder-container {
-        margin: 8px 30px 0;
-    }
-
-    .folder-label{
-        font-size: 10pt;
-        width: 92px;
-    }
-
-
-    #lt-launch-github {
-        margin-top: 60px;
-    }
-
-    #lt-keyboard {
-        margin-left: 60px;
-        top: 455px;
-        width: 600px;
-    }
-
-    #lt-keyboard div{
-        width: 45px;
-        height: 30px;
-        font-size: 16px;
-    }
-
-    #lt-keyboard #k-9{
-        margin-left:20px;
-    }
-
-
-    #lt-keyboard #k-32 {
-        width: 400px;
-        height: 12px;
-        margin-top: 15px;
-    }
-
-    #lt-keyboard #k-500{
-        margin-left:40px;
-    }
-
     #lt-far-right-column {
         position: absolute;
         left: 1400px;
@@ -786,18 +529,4 @@ ul {
         width: 100%;
 
     }
-
-    .folder-big {
-        background-image: url(../images/encom_folder_xl.png);
-        width:140px;
-        height: 93px;
-    }
-
-    .folder-small {
-        background-image: url(../images/encom_folder_big.png);
-        width:95px;
-        height: 63px;
-    }
-
-
 }
